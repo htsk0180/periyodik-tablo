@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#050816">
+  <title>Periyodik Tablo — İnteraktif Element Simülasyonu</title>
+  <meta name="description" content="118 elementin tamamını keşfet: 3B atom modelleri, orbitaller, izotoplar, tayflar, tepkimeler, quiz ve karşılaştırma. Türkçe / English.">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop stop-color='%2367e8f9'/%3E%3Cstop offset='1' stop-color='%23a78bfa'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23070b1a'/%3E%3Cellipse cx='32' cy='32' rx='24' ry='9' fill='none' stroke='%2367e8f9' stroke-width='2' opacity='.8'/%3E%3Cellipse cx='32' cy='32' rx='24' ry='9' fill='none' stroke='%23a78bfa' stroke-width='2' opacity='.8' transform='rotate(60 32 32)'/%3E%3Cellipse cx='32' cy='32' rx='24' ry='9' fill='none' stroke='%23f472b6' stroke-width='2' opacity='.8' transform='rotate(120 32 32)'/%3E%3Ccircle cx='32' cy='32' r='5' fill='url(%23g)'/%3E%3C/svg%3E">
+</head>
+<body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.2"/><ellipse cx="12" cy="12" rx="9.5" ry="3.7" fill="none" stroke="currentColor" stroke-width="1.4"/><ellipse cx="12" cy="12" rx="9.5" ry="3.7" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9.5" ry="3.7" fill="none" stroke="currentColor" stroke-width="1.4" transform="rotate(120 12 12)"/></symbol>
+      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18M8 9v11M16 9v11M8 14h8" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+      <symbol id="i-quiz" viewBox="0 0 24 24"><path d="M9.1 9a3 3 0 1 1 4.6 2.5c-.9.6-1.7 1.2-1.7 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="17.7" r="1.2"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18M7 7H4l-2 6h6L6 7zm10 0h3l2 6h-6l2-6z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M4 13c0 1.7 1.3 3 3 3s3-1.3 3-3M14 13c0 1.7 1.3 3 3 3s3-1.3 3-3M7 21h10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 4v6h6M20 20v-6h-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.5 15a7 7 0 0 0 12.9 1M18.5 9A7 7 0 0 0 5.6 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5 14 9l6.5 2-6.5 2-2 6.5-2-6.5L3.5 11 10 9 12 2.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="14" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+      <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17 9 11l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 6h5v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M10 5H5a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1v-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#explore-view">İçeriğe geç</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#" class="brand" id="brand" aria-label="Periyodik Tablo ana sayfa">
+        <span class="brand-mark"><svg class="icon"><use href="#i-atom"/></svg></span>
+        <span class="brand-text">
+          <strong data-i18n="appName">Periyodik Tablo</strong>
+          <small data-i18n="appTag">İnteraktif Element Laboratuvarı</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Ana görünümler">
+        <button class="nav-btn is-active" data-view="explore" type="button">
+          <svg class="icon"><use href="#i-table"/></svg><span data-i18n="navTable">Tablo</span>
+        </button>
+        <button class="nav-btn" data-view="quiz" type="button">
+          <svg class="icon"><use href="#i-quiz"/></svg><span data-i18n="navQuiz">Quiz</span>
+        </button>
+        <button class="nav-btn" data-view="compare" type="button">
+          <svg class="icon"><use href="#i-scale"/></svg><span data-i18n="navCompare">Karşılaştır</span>
+        </button>
+      </nav>
+
+      <div class="header-actions">
+        <div class="search" id="search-wrap">
+          <button class="search-toggle icon-btn" id="search-toggle" type="button" aria-label="Ara" aria-expanded="false">
+            <svg class="icon"><use href="#i-search"/></svg>
+          </button>
+          <div class="search-field">
+            <svg class="icon search-icon" aria-hidden="true"><use href="#i-search"/></svg>
+            <input id="search-input" type="search" autocomplete="off" spellcheck="false"
+                   placeholder="Element ara: Fe, demir, 26…" data-i18n-placeholder="searchPlaceholder"
+                   aria-label="Element ara" aria-controls="search-results">
+            <kbd class="search-kbd">/</kbd>
+          </div>
+          <div class="search-results hidden" id="search-results" role="listbox" aria-label="Arama sonuçları"></div>
+        </div>
+
+        <div class="lang-switch" role="group" aria-label="Dil / Language">
+          <button type="button" data-lang="tr" class="is-active" aria-pressed="true">TR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="explore-view" class="view">
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="heroEyebrow">MADDENİN HARİTASI</span></div>
+            <h1 id="hero-title">
+              <span data-i18n="heroTitle1">118 element.</span>
+              <em data-i18n="heroTitle2">Tek bir tablo.</em>
+            </h1>
+            <p class="hero-sub" data-i18n="heroSubtitle">Periyodik tabloyu keşfet; her elementin atom modelini, özelliklerini, izotoplarını ve tepkimelerini 3B olarak incele.</p>
+            <div class="hero-cta">
+              <button class="btn btn-primary" id="hero-explore" type="button">
+                <svg class="icon"><use href="#i-table"/></svg><span data-i18n="heroCtaExplore">Tabloyu keşfet</span>
+              </button>
+              <button class="btn btn-ghost" id="hero-quiz" type="button">
+                <svg class="icon"><use href="#i-quiz"/></svg><span data-i18n="heroCtaQuiz">Bilgini test et</span>
+              </button>
+            </div>
+            <dl class="hero-stats">
+              <div><dt data-i18n="statElements">element</dt><dd>118</dd></div>
+              <div><dt data-i18n="statPeriods">periyot</dt><dd>7</dd></div>
+              <div><dt data-i18n="statGroups">grup</dt><dd>18</dd></div>
+              <div><dt data-i18n="statWebgl">WebGL 3B</dt><dd class="stat-small"><span class="live-dot"></span>3D</dd></div>
+            </dl>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orbit-label orbit-label-a">1s²</div>
+            <div class="orbit-label orbit-label-b">2p⁶</div>
+            <div class="orbit-label orbit-label-c">3d¹⁰</div>
+          </div>
+        </div>
+        <div class="hero-fade" aria-hidden="true"></div>
+      </section>
+
+      <div class="container table-section">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker"><span>01</span> EXPLORE</div>
+            <h2 data-i18n="tableTitle">Element Tablosu</h2>
+            <p data-i18n="tableSubtitle">Bir elemente dokun, tüm detayları gör.</p>
+          </div>
+          <div class="table-actions">
+            <label class="select-wrap">
+              <span data-i18n="colorMode">Renklendirme</span>
+              <select id="color-mode" aria-label="Renklendirme ölçütü">
+                <option value="category" data-i18n="colorCategory">Kategori</option>
+                <option value="state" data-i18n="colorState">Fiziksel hâl</option>
+                <option value="electronegativity" data-i18n="colorElectronegativity">Elektronegatiflik</option>
+                <option value="melting" data-i18n="colorMelting">Erime noktası</option>
+                <option value="radius" data-i18n="colorRadius">Atom yarıçapı</option>
+                <option value="discovery" data-i18n="colorDiscovery">Keşif yılı</option>
+              </select>
+              <svg class="icon select-chevron" aria-hidden="true"><use href="#i-down"/></svg>
+            </label>
+            <button class="btn btn-small btn-ghost" id="trends-btn" type="button">
+              <svg class="icon"><use href="#i-trend"/></svg><span data-i18n="trendsBtn">Periyodik eğilimler</span>
+            </button>
+            <button class="btn btn-small btn-ghost view-toggle" id="list-toggle" type="button" aria-pressed="false">
+              <svg class="icon"><use href="#i-list"/></svg><span>Liste</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="legend-bar">
+          <div class="legend-heading"><svg class="icon"><use href="#i-spark"/></svg><span data-i18n="legend">Lejant</span></div>
+          <div id="legend" class="legend"></div>
+          <button class="clear-filter hidden" id="clear-filter" type="button">
+            <svg class="icon"><use href="#i-close"/></svg><span data-i18n="clearFilter">Filtreyi temizle</span>
+          </button>
+        </div>
+
+        <div class="ptable-shell">
+          <div class="ptable-scroll" id="ptable-scroll">
+            <div class="ptable" id="ptable" role="group" aria-label="Periyodik tablo"></div>
+          </div>
+          <div class="zoom-controls" aria-label="Tablo yakınlaştırma">
+            <button type="button" id="zoom-in" aria-label="Yakınlaştır"><svg class="icon"><use href="#i-plus"/></svg></button>
+            <button type="button" id="zoom-out" aria-label="Uzaklaştır"><svg class="icon"><use href="#i-minus"/></svg></button>
+            <button type="button" id="zoom-reset" aria-label="Sıfırla"><svg class="icon"><use href="#i-reset"/></svg></button>
+          </div>
+        </div>
+
+        <div class="list-wrap hidden" id="list-wrap">
+          <div class="element-list" id="element-list"></div>
+          <p class="empty-note hidden" id="list-empty" data-i18n="searchNoResults">Eşleşen element bulunamadı.</p>
+        </div>
+
+        <div class="table-footnote">
+          <p class="mobile-hint" data-i18n="mobileHint">Tabloyu yatay kaydırabilir, iki parmakla yakınlaştırabilirsin.</p>
+          <p class="table-note" data-i18n="tableNote">Süper ağır elementlerin (Z ≥ 109) bazı özellikleri tahminidir. Değerler farklı kaynaklarda küçük farklılıklar gösterebilir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz-view" class="view container hidden" aria-labelledby="quiz-title">
+      <div class="quiz-layout">
+        <aside class="quiz-intro card">
+          <div class="section-kicker"><span>02</span> QUIZ</div>
+          <h2 id="quiz-title" data-i18n="quiz.title">Periyodik Tablo Ustası</h2>
+          <p class="muted" data-i18n="quiz.subtitle">10 soruda element bilgini sına. Her sorudan sonra açıklamayı oku.</p>
+          <div class="quiz-levels" id="quiz-levels" role="group" aria-label="Quiz seviyesi">
+            <button type="button" data-level="easy" class="is-active" aria-pressed="true">
+              <strong data-i18n="quiz.levels.easy">Keşif</strong>
+              <small data-i18n="quiz.levelDesc.easy">İlk 36 element ve temel bilgiler</small>
+            </button>
+            <button type="button" data-level="medium" aria-pressed="false">
+              <strong data-i18n="quiz.levels.medium">Bilgi</strong>
+              <small data-i18n="quiz.levelDesc.medium">Tüm elementler, semboller ve gruplar</small>
+            </button>
+            <button type="button" data-level="hard" aria-pressed="false">
+              <strong data-i18n="quiz.levels.hard">Uzman</strong>
+              <small data-i18n="quiz.levelDesc.hard">Özellikler, izotoplar ve elektron dizilimleri</small>
+            </button>
+          </div>
+          <div class="quiz-meta">
+            <div><span data-i18n="quiz.best">En iyi</span><strong id="quiz-best">—</strong></div>
+            <div><span data-i18n="quiz.streak">Seri</span><strong id="quiz-streak">0</strong></div>
+            <div><span data-i18n="quiz.score">Puan</span><strong id="quiz-score">0</strong></div>
+          </div>
+          <button class="btn btn-primary wide" id="quiz-start" type="button">
+            <svg class="icon"><use href="#i-spark"/></svg><span data-i18n="quiz.start">Quize başla</span>
+          </button>
+        </aside>
+        <div class="quiz-stage">
+          <div class="quiz-card card" id="quiz-card"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compare-view" class="view container hidden" aria-labelledby="compare-title">
+      <div class="section-head compare-head">
+        <div>
+          <div class="section-kicker"><span>03</span> COMPARE</div>
+          <h2 id="compare-title" data-i18n="compare.title">Element karşılaştır</h2>
+          <p data-i18n="compare.subtitle">İki elementin özelliklerini yan yana oku, periyodik eğilimleri gör.</p>
+        </div>
+      </div>
+      <div class="compare-toolbar">
+        <label class="compare-picker" id="compare-picker-a">
+          <span data-i18n="compare.elementA">1. element</span>
+          <select id="compare-select-a" aria-label="Birinci element"></select>
+          <svg class="icon select-chevron" aria-hidden="true"><use href="#i-down"/></svg>
+        </label>
+        <button class="swap-btn" id="compare-swap" type="button" aria-label="Yer değiştir">
+          <svg class="icon"><use href="#i-scale"/></svg>
+        </button>
+        <label class="compare-picker" id="compare-picker-b">
+          <span data-i18n="compare.elementB">2. element</span>
+          <select id="compare-select-b" aria-label="İkinci element"></select>
+          <svg class="icon select-chevron" aria-hidden="true"><use href="#i-down"/></svg>
+        </label>
+      </div>
+      <div id="compare-result" class="compare-result"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark small"><svg class="icon"><use href="#i-atom"/></svg></span>
+        <div>
+          <strong data-i18n="appName">Periyodik Tablo</strong>
+          <p data-i18n="footerMade">Three.js ve açık verilerle üretildi.</p>
+        </div>
+      </div>
+      <div class="footer-sources">
+        <span data-i18n="footerSources">Veri kaynakları</span>
+        <div>
+          <a href="https://github.com/Bowserinator/Periodic-Table-JSON" target="_blank" rel="noopener">Periodic-Table-JSON</a>
+          <a href="https://pse-info.de" target="_blank" rel="noopener">pse-info.de</a>
+          <a href="https://github.com/lmmentel/mendeleev-data" target="_blank" rel="noopener">mendeleev-data</a>
+          <a href="https://tr.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a>
+        </div>
+      </div>
+      <p class="footer-disclaimer" data-i18n="footerDisclaimer">Eğitim amaçlı interaktif simülasyon. Kimyasal çalışmalarda güvenlik bilgi formlarına başvurun.</p>
+      <p class="footer-shortcuts" data-i18n="keyboardHint">Kısayollar: / ara · Esc kapat · ← → element değiştir</p>
+    </div>
+  </footer>
+
+  <nav class="mobile-nav" aria-label="Mobil görünümler">
+    <button type="button" class="is-active" data-view="explore"><svg class="icon"><use href="#i-table"/></svg><span data-i18n="navTable">Tablo</span></button>
+    <button type="button" data-view="quiz"><svg class="icon"><use href="#i-quiz"/></svg><span data-i18n="navQuiz">Quiz</span></button>
+    <button type="button" data-view="compare"><svg class="icon"><use href="#i-scale"/></svg><span data-i18n="navCompare">Karşılaştır</span></button>
+  </nav>
+
+  <div id="tooltip" class="tooltip hidden" role="tooltip"></div>
+  <div id="modal-root"></div>
+
+  <div class="overlay hidden" id="trends-modal" role="dialog" aria-modal="true" aria-labelledby="trends-title">
+    <div class="modal-panel trends-panel">
+      <div class="modal-head">
+        <div>
+          <div class="section-kicker"><span>04</span> TRENDS</div>
+          <h2 id="trends-title" data-i18n="trendsTitle">Periyodik eğilimler</h2>
+          <p data-i18n="trendsSubtitle">Tabloyu okumanın dört altın kuralı</p>
+        </div>
+        <button class="icon-btn modal-close" id="trends-close" type="button" aria-label="Kapat"><svg class="icon"><use href="#i-close"/></svg></button>
+      </div>
+      <div class="trend-grid">
+        <article class="trend-card"><span class="trend-index">01</span><div class="trend-arrow arrow-h">→</div><h3 data-i18n="trend1Title">Atom yarıçapı</h3><p data-i18n="trend1Desc">Bir periyotta soldan sağa azalır; bir grupta yukarıdan aşağıya artar.</p></article>
+        <article class="trend-card"><span class="trend-index">02</span><div class="trend-arrow arrow-h">→</div><h3 data-i18n="trend2Title">Elektronegatiflik</h3><p data-i18n="trend2Desc">Bir periyotta soldan sağa artar; bir grupta yukarıdan aşağıya azalır. Flor en yüksektir.</p></article>
+        <article class="trend-card"><span class="trend-index">03</span><div class="trend-arrow arrow-v">↓</div><h3 data-i18n="trend3Title">İyonlaşma enerjisi</h3><p data-i18n="trend3Desc">Bir periyotta soldan sağa genel olarak artar; aşağı indikçe azalır.</p></article>
+        <article class="trend-card"><span class="trend-index">04</span><div class="trend-arrow arrow-d">↘</div><h3 data-i18n="trend4Title">Metalik karakter</h3><p data-i18n="trend4Desc">Sol ve alt köşeye gidildikçe artar. Soy gazlar tepkimeye girmez; ametaller sağ üsttedir.</p></article>
+      </div>
+      <div class="trend-foot">
+        <p class="muted">Bir periyotta çekirdek yükü artarken kabuk aynı kalır; elektronlar çekirdeğe daha güçlü bağlanır. Bir grupta ise yeni kabuklar eklenir ve değerlik elektronları uzaklaşır.</p>
+        <button class="btn btn-ghost" id="trends-ok" type="button">Anladım</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><div class="noscript">Bu simülasyon için JavaScript gerekir.</div></noscript>
+
+  <script src="assets/data/elements.js"></script>
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="assets/vendor/OrbitControls.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/reactions.js"></script>
+  <script src="js/atom3d.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

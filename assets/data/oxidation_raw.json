@@ -1,0 +1,3608 @@
+[
+    {
+        "atomic_number": 1,
+        "category": "main",
+        "id": 1,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 1,
+        "category": "main",
+        "id": 2,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 3,
+        "category": "main",
+        "id": 3,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 4,
+        "category": "extended",
+        "id": 4,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 4,
+        "category": "main",
+        "id": 5,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 4,
+        "category": "extended",
+        "id": 6,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 5,
+        "category": "extended",
+        "id": 7,
+        "oxidation_state": -5
+    },
+    {
+        "atomic_number": 5,
+        "category": "extended",
+        "id": 8,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 5,
+        "category": "main",
+        "id": 9,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 5,
+        "category": "extended",
+        "id": 10,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 5,
+        "category": "extended",
+        "id": 11,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 5,
+        "category": "extended",
+        "id": 12,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 6,
+        "category": "extended",
+        "id": 13,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 6,
+        "category": "extended",
+        "id": 14,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 6,
+        "category": "extended",
+        "id": 15,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 6,
+        "category": "extended",
+        "id": 16,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 6,
+        "category": "main",
+        "id": 17,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 6,
+        "category": "main",
+        "id": 18,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 6,
+        "category": "extended",
+        "id": 19,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 6,
+        "category": "extended",
+        "id": 20,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 6,
+        "category": "extended",
+        "id": 21,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 7,
+        "category": "main",
+        "id": 22,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 7,
+        "category": "extended",
+        "id": 23,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 7,
+        "category": "extended",
+        "id": 24,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 7,
+        "category": "main",
+        "id": 25,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 7,
+        "category": "extended",
+        "id": 26,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 7,
+        "category": "main",
+        "id": 27,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 7,
+        "category": "extended",
+        "id": 28,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 7,
+        "category": "extended",
+        "id": 29,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 7,
+        "category": "extended",
+        "id": 30,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 8,
+        "category": "main",
+        "id": 31,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 8,
+        "category": "extended",
+        "id": 32,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 8,
+        "category": "extended",
+        "id": 33,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 8,
+        "category": "extended",
+        "id": 34,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 8,
+        "category": "extended",
+        "id": 35,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 9,
+        "category": "main",
+        "id": 36,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 11,
+        "category": "main",
+        "id": 37,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 11,
+        "category": "extended",
+        "id": 38,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 11,
+        "category": "extended",
+        "id": 39,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 12,
+        "category": "main",
+        "id": 40,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 12,
+        "category": "extended",
+        "id": 41,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 12,
+        "category": "extended",
+        "id": 42,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 13,
+        "category": "extended",
+        "id": 43,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 13,
+        "category": "extended",
+        "id": 44,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 13,
+        "category": "extended",
+        "id": 45,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 13,
+        "category": "extended",
+        "id": 46,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 13,
+        "category": "main",
+        "id": 47,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 13,
+        "category": "extended",
+        "id": 48,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 14,
+        "category": "extended",
+        "id": 49,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 14,
+        "category": "extended",
+        "id": 50,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 14,
+        "category": "extended",
+        "id": 51,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 14,
+        "category": "main",
+        "id": 52,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 14,
+        "category": "extended",
+        "id": 53,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 14,
+        "category": "extended",
+        "id": 54,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 14,
+        "category": "main",
+        "id": 55,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 14,
+        "category": "extended",
+        "id": 56,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 14,
+        "category": "extended",
+        "id": 57,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 15,
+        "category": "extended",
+        "id": 58,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 15,
+        "category": "extended",
+        "id": 59,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 15,
+        "category": "extended",
+        "id": 60,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 15,
+        "category": "main",
+        "id": 61,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 15,
+        "category": "extended",
+        "id": 62,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 15,
+        "category": "extended",
+        "id": 63,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 15,
+        "category": "extended",
+        "id": 64,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 15,
+        "category": "main",
+        "id": 65,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 15,
+        "category": "main",
+        "id": 66,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 16,
+        "category": "main",
+        "id": 67,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 16,
+        "category": "extended",
+        "id": 68,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 16,
+        "category": "extended",
+        "id": 69,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 16,
+        "category": "extended",
+        "id": 70,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 16,
+        "category": "extended",
+        "id": 71,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 16,
+        "category": "main",
+        "id": 72,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 16,
+        "category": "main",
+        "id": 73,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 16,
+        "category": "extended",
+        "id": 74,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 16,
+        "category": "main",
+        "id": 75,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 17,
+        "category": "main",
+        "id": 76,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 17,
+        "category": "extended",
+        "id": 77,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 17,
+        "category": "main",
+        "id": 78,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 17,
+        "category": "main",
+        "id": 79,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 17,
+        "category": "main",
+        "id": 80,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 17,
+        "category": "extended",
+        "id": 81,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 17,
+        "category": "main",
+        "id": 82,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 17,
+        "category": "extended",
+        "id": 83,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 19,
+        "category": "main",
+        "id": 84,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 19,
+        "category": "extended",
+        "id": 85,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 20,
+        "category": "extended",
+        "id": 86,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 20,
+        "category": "main",
+        "id": 87,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 21,
+        "category": "main",
+        "id": 88,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 21,
+        "category": "extended",
+        "id": 89,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 21,
+        "category": "extended",
+        "id": 90,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 21,
+        "category": "extended",
+        "id": 91,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 22,
+        "category": "extended",
+        "id": 92,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 22,
+        "category": "extended",
+        "id": 93,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 22,
+        "category": "extended",
+        "id": 94,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 22,
+        "category": "extended",
+        "id": 95,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 22,
+        "category": "extended",
+        "id": 96,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 22,
+        "category": "extended",
+        "id": 97,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 22,
+        "category": "main",
+        "id": 98,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 23,
+        "category": "main",
+        "id": 99,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 23,
+        "category": "extended",
+        "id": 100,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 23,
+        "category": "extended",
+        "id": 101,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 23,
+        "category": "extended",
+        "id": 102,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 23,
+        "category": "extended",
+        "id": 103,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 23,
+        "category": "extended",
+        "id": 104,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 23,
+        "category": "extended",
+        "id": 105,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 23,
+        "category": "extended",
+        "id": 106,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 107,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 24,
+        "category": "main",
+        "id": 108,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 109,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 110,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 111,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 112,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 113,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 114,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 24,
+        "category": "main",
+        "id": 115,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 24,
+        "category": "extended",
+        "id": 116,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 25,
+        "category": "extended",
+        "id": 117,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 25,
+        "category": "main",
+        "id": 118,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 25,
+        "category": "extended",
+        "id": 119,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 25,
+        "category": "extended",
+        "id": 120,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 25,
+        "category": "extended",
+        "id": 121,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 25,
+        "category": "main",
+        "id": 122,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 25,
+        "category": "extended",
+        "id": 123,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 25,
+        "category": "extended",
+        "id": 124,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 25,
+        "category": "main",
+        "id": 125,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 25,
+        "category": "extended",
+        "id": 126,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 127,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 128,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 26,
+        "category": "main",
+        "id": 129,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 130,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 131,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 132,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 133,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 134,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 135,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 26,
+        "category": "extended",
+        "id": 136,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 26,
+        "category": "main",
+        "id": 137,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 27,
+        "category": "extended",
+        "id": 138,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 27,
+        "category": "extended",
+        "id": 139,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 27,
+        "category": "extended",
+        "id": 140,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 27,
+        "category": "extended",
+        "id": 141,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 27,
+        "category": "main",
+        "id": 142,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 27,
+        "category": "extended",
+        "id": 143,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 27,
+        "category": "main",
+        "id": 144,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 27,
+        "category": "extended",
+        "id": 145,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 28,
+        "category": "extended",
+        "id": 146,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 28,
+        "category": "extended",
+        "id": 147,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 28,
+        "category": "extended",
+        "id": 148,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 28,
+        "category": "extended",
+        "id": 149,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 28,
+        "category": "extended",
+        "id": 150,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 28,
+        "category": "extended",
+        "id": 151,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 28,
+        "category": "main",
+        "id": 152,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 29,
+        "category": "extended",
+        "id": 153,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 29,
+        "category": "extended",
+        "id": 154,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 29,
+        "category": "extended",
+        "id": 155,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 29,
+        "category": "extended",
+        "id": 156,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 29,
+        "category": "extended",
+        "id": 157,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 29,
+        "category": "main",
+        "id": 158,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 30,
+        "category": "extended",
+        "id": 159,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 30,
+        "category": "extended",
+        "id": 160,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 30,
+        "category": "main",
+        "id": 161,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 30,
+        "category": "extended",
+        "id": 162,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 163,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 164,
+        "oxidation_state": -5
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 165,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 166,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 167,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 168,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 169,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 31,
+        "category": "extended",
+        "id": 170,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 31,
+        "category": "main",
+        "id": 171,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 32,
+        "category": "extended",
+        "id": 172,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 32,
+        "category": "extended",
+        "id": 173,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 32,
+        "category": "main",
+        "id": 174,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 32,
+        "category": "extended",
+        "id": 175,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 32,
+        "category": "main",
+        "id": 176,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 32,
+        "category": "extended",
+        "id": 177,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 32,
+        "category": "main",
+        "id": 178,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 32,
+        "category": "extended",
+        "id": 179,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 32,
+        "category": "extended",
+        "id": 180,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 33,
+        "category": "extended",
+        "id": 181,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 33,
+        "category": "main",
+        "id": 182,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 33,
+        "category": "extended",
+        "id": 183,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 33,
+        "category": "main",
+        "id": 184,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 33,
+        "category": "extended",
+        "id": 185,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 33,
+        "category": "extended",
+        "id": 186,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 33,
+        "category": "extended",
+        "id": 187,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 33,
+        "category": "extended",
+        "id": 188,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 33,
+        "category": "main",
+        "id": 189,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 34,
+        "category": "main",
+        "id": 190,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 34,
+        "category": "extended",
+        "id": 191,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 34,
+        "category": "main",
+        "id": 192,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 34,
+        "category": "extended",
+        "id": 193,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 34,
+        "category": "main",
+        "id": 194,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 34,
+        "category": "main",
+        "id": 195,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 34,
+        "category": "extended",
+        "id": 196,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 34,
+        "category": "extended",
+        "id": 197,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 34,
+        "category": "extended",
+        "id": 198,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 35,
+        "category": "extended",
+        "id": 199,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 35,
+        "category": "main",
+        "id": 200,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 35,
+        "category": "main",
+        "id": 201,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 35,
+        "category": "main",
+        "id": 202,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 35,
+        "category": "extended",
+        "id": 203,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 35,
+        "category": "main",
+        "id": 204,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 35,
+        "category": "extended",
+        "id": 205,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 36,
+        "category": "extended",
+        "id": 206,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 36,
+        "category": "main",
+        "id": 207,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 37,
+        "category": "main",
+        "id": 208,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 37,
+        "category": "extended",
+        "id": 209,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 38,
+        "category": "main",
+        "id": 210,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 38,
+        "category": "extended",
+        "id": 211,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 39,
+        "category": "extended",
+        "id": 212,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 39,
+        "category": "extended",
+        "id": 213,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 39,
+        "category": "main",
+        "id": 214,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 39,
+        "category": "extended",
+        "id": 215,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 40,
+        "category": "main",
+        "id": 216,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 40,
+        "category": "extended",
+        "id": 217,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 40,
+        "category": "extended",
+        "id": 218,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 40,
+        "category": "extended",
+        "id": 219,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 41,
+        "category": "extended",
+        "id": 220,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 41,
+        "category": "extended",
+        "id": 221,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 41,
+        "category": "extended",
+        "id": 222,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 41,
+        "category": "extended",
+        "id": 223,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 41,
+        "category": "extended",
+        "id": 224,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 41,
+        "category": "extended",
+        "id": 225,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 41,
+        "category": "main",
+        "id": 226,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 41,
+        "category": "extended",
+        "id": 227,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 228,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 229,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 230,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 231,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 232,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 42,
+        "category": "main",
+        "id": 233,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 234,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 42,
+        "category": "main",
+        "id": 235,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 236,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 42,
+        "category": "extended",
+        "id": 237,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 43,
+        "category": "extended",
+        "id": 238,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 43,
+        "category": "main",
+        "id": 239,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 43,
+        "category": "extended",
+        "id": 240,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 43,
+        "category": "main",
+        "id": 241,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 43,
+        "category": "extended",
+        "id": 242,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 43,
+        "category": "extended",
+        "id": 243,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 43,
+        "category": "extended",
+        "id": 244,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 43,
+        "category": "extended",
+        "id": 245,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 43,
+        "category": "extended",
+        "id": 246,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 247,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 248,
+        "oxidation_state": 8
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 249,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 250,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 44,
+        "category": "main",
+        "id": 251,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 252,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 253,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 44,
+        "category": "main",
+        "id": 254,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 255,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 44,
+        "category": "extended",
+        "id": 256,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 257,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 258,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 259,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 260,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 261,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 45,
+        "category": "main",
+        "id": 262,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 263,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 264,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 45,
+        "category": "extended",
+        "id": 265,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 46,
+        "category": "main",
+        "id": 266,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 46,
+        "category": "extended",
+        "id": 267,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 46,
+        "category": "extended",
+        "id": 268,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 46,
+        "category": "main",
+        "id": 269,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 46,
+        "category": "extended",
+        "id": 270,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 47,
+        "category": "extended",
+        "id": 271,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 47,
+        "category": "extended",
+        "id": 272,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 47,
+        "category": "extended",
+        "id": 273,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 47,
+        "category": "extended",
+        "id": 274,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 47,
+        "category": "extended",
+        "id": 275,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 47,
+        "category": "main",
+        "id": 276,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 48,
+        "category": "extended",
+        "id": 277,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 48,
+        "category": "main",
+        "id": 278,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 48,
+        "category": "extended",
+        "id": 279,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 49,
+        "category": "extended",
+        "id": 280,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 49,
+        "category": "extended",
+        "id": 281,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 49,
+        "category": "extended",
+        "id": 282,
+        "oxidation_state": -5
+    },
+    {
+        "atomic_number": 49,
+        "category": "extended",
+        "id": 283,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 49,
+        "category": "extended",
+        "id": 284,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 49,
+        "category": "extended",
+        "id": 285,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 49,
+        "category": "main",
+        "id": 286,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 50,
+        "category": "main",
+        "id": 287,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 50,
+        "category": "main",
+        "id": 288,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 50,
+        "category": "extended",
+        "id": 289,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 50,
+        "category": "extended",
+        "id": 290,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 50,
+        "category": "extended",
+        "id": 291,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 50,
+        "category": "extended",
+        "id": 292,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 50,
+        "category": "extended",
+        "id": 293,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 50,
+        "category": "main",
+        "id": 294,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 50,
+        "category": "extended",
+        "id": 295,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 51,
+        "category": "extended",
+        "id": 296,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 51,
+        "category": "extended",
+        "id": 297,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 51,
+        "category": "extended",
+        "id": 298,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 51,
+        "category": "main",
+        "id": 299,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 51,
+        "category": "main",
+        "id": 300,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 51,
+        "category": "extended",
+        "id": 301,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 51,
+        "category": "extended",
+        "id": 302,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 51,
+        "category": "extended",
+        "id": 303,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 51,
+        "category": "main",
+        "id": 304,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 52,
+        "category": "main",
+        "id": 305,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 52,
+        "category": "main",
+        "id": 306,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 52,
+        "category": "extended",
+        "id": 307,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 52,
+        "category": "main",
+        "id": 308,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 52,
+        "category": "extended",
+        "id": 309,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 52,
+        "category": "extended",
+        "id": 310,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 52,
+        "category": "extended",
+        "id": 311,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 52,
+        "category": "extended",
+        "id": 312,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 52,
+        "category": "main",
+        "id": 313,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 53,
+        "category": "main",
+        "id": 314,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 53,
+        "category": "main",
+        "id": 315,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 53,
+        "category": "main",
+        "id": 316,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 53,
+        "category": "extended",
+        "id": 317,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 53,
+        "category": "extended",
+        "id": 318,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 53,
+        "category": "main",
+        "id": 319,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 53,
+        "category": "main",
+        "id": 320,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 53,
+        "category": "extended",
+        "id": 321,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 54,
+        "category": "main",
+        "id": 322,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 54,
+        "category": "extended",
+        "id": 323,
+        "oxidation_state": 8
+    },
+    {
+        "atomic_number": 54,
+        "category": "main",
+        "id": 324,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 54,
+        "category": "main",
+        "id": 325,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 55,
+        "category": "extended",
+        "id": 326,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 55,
+        "category": "main",
+        "id": 327,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 56,
+        "category": "extended",
+        "id": 328,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 56,
+        "category": "main",
+        "id": 329,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 57,
+        "category": "extended",
+        "id": 330,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 57,
+        "category": "main",
+        "id": 331,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 57,
+        "category": "extended",
+        "id": 332,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 57,
+        "category": "extended",
+        "id": 333,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 58,
+        "category": "main",
+        "id": 334,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 58,
+        "category": "extended",
+        "id": 335,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 58,
+        "category": "main",
+        "id": 336,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 58,
+        "category": "extended",
+        "id": 337,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 59,
+        "category": "main",
+        "id": 338,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 59,
+        "category": "extended",
+        "id": 339,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 59,
+        "category": "extended",
+        "id": 340,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 59,
+        "category": "extended",
+        "id": 341,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 59,
+        "category": "extended",
+        "id": 342,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 59,
+        "category": "extended",
+        "id": 343,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 60,
+        "category": "main",
+        "id": 344,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 60,
+        "category": "extended",
+        "id": 345,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 60,
+        "category": "extended",
+        "id": 346,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 60,
+        "category": "extended",
+        "id": 347,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 61,
+        "category": "extended",
+        "id": 348,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 61,
+        "category": "main",
+        "id": 349,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 62,
+        "category": "extended",
+        "id": 350,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 62,
+        "category": "extended",
+        "id": 351,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 62,
+        "category": "extended",
+        "id": 352,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 62,
+        "category": "main",
+        "id": 353,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 63,
+        "category": "main",
+        "id": 354,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 63,
+        "category": "extended",
+        "id": 355,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 63,
+        "category": "main",
+        "id": 356,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 64,
+        "category": "extended",
+        "id": 357,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 64,
+        "category": "extended",
+        "id": 358,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 64,
+        "category": "extended",
+        "id": 359,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 64,
+        "category": "main",
+        "id": 360,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 65,
+        "category": "extended",
+        "id": 361,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 65,
+        "category": "main",
+        "id": 362,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 65,
+        "category": "extended",
+        "id": 363,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 65,
+        "category": "extended",
+        "id": 364,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 65,
+        "category": "extended",
+        "id": 365,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 66,
+        "category": "extended",
+        "id": 366,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 66,
+        "category": "extended",
+        "id": 367,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 66,
+        "category": "main",
+        "id": 368,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 66,
+        "category": "extended",
+        "id": 369,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 66,
+        "category": "extended",
+        "id": 370,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 67,
+        "category": "extended",
+        "id": 371,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 67,
+        "category": "main",
+        "id": 372,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 67,
+        "category": "extended",
+        "id": 373,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 67,
+        "category": "extended",
+        "id": 374,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 68,
+        "category": "extended",
+        "id": 375,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 68,
+        "category": "extended",
+        "id": 376,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 68,
+        "category": "extended",
+        "id": 377,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 68,
+        "category": "main",
+        "id": 378,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 69,
+        "category": "extended",
+        "id": 379,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 69,
+        "category": "extended",
+        "id": 380,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 69,
+        "category": "main",
+        "id": 381,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 69,
+        "category": "extended",
+        "id": 382,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 70,
+        "category": "extended",
+        "id": 383,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 70,
+        "category": "extended",
+        "id": 384,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 70,
+        "category": "extended",
+        "id": 385,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 70,
+        "category": "main",
+        "id": 386,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 71,
+        "category": "extended",
+        "id": 387,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 71,
+        "category": "main",
+        "id": 388,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 71,
+        "category": "extended",
+        "id": 389,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 71,
+        "category": "extended",
+        "id": 390,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 72,
+        "category": "extended",
+        "id": 391,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 72,
+        "category": "extended",
+        "id": 392,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 72,
+        "category": "extended",
+        "id": 393,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 72,
+        "category": "extended",
+        "id": 394,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 72,
+        "category": "main",
+        "id": 395,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 72,
+        "category": "extended",
+        "id": 396,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 73,
+        "category": "main",
+        "id": 397,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 73,
+        "category": "extended",
+        "id": 398,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 73,
+        "category": "extended",
+        "id": 399,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 73,
+        "category": "extended",
+        "id": 400,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 73,
+        "category": "extended",
+        "id": 401,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 73,
+        "category": "extended",
+        "id": 402,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 73,
+        "category": "extended",
+        "id": 403,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 73,
+        "category": "extended",
+        "id": 404,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 405,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 74,
+        "category": "main",
+        "id": 406,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 407,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 408,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 409,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 74,
+        "category": "main",
+        "id": 410,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 411,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 412,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 413,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 74,
+        "category": "extended",
+        "id": 414,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 415,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 416,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 417,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 418,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 419,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 420,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 421,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 422,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 75,
+        "category": "extended",
+        "id": 423,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 75,
+        "category": "main",
+        "id": 424,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 425,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 426,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 427,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 428,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 429,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 430,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 431,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 432,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 433,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 434,
+        "oxidation_state": 8
+    },
+    {
+        "atomic_number": 76,
+        "category": "main",
+        "id": 435,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 76,
+        "category": "extended",
+        "id": 436,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 437,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 438,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 439,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 440,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 441,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 77,
+        "category": "main",
+        "id": 442,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 443,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 444,
+        "oxidation_state": 9
+    },
+    {
+        "atomic_number": 77,
+        "category": "main",
+        "id": 445,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 446,
+        "oxidation_state": 8
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 447,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 77,
+        "category": "extended",
+        "id": 448,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 449,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 450,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 451,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 452,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 453,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 454,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 455,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 78,
+        "category": "main",
+        "id": 456,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 78,
+        "category": "main",
+        "id": 457,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 78,
+        "category": "extended",
+        "id": 458,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 79,
+        "category": "extended",
+        "id": 459,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 79,
+        "category": "extended",
+        "id": 460,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 79,
+        "category": "extended",
+        "id": 461,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 79,
+        "category": "extended",
+        "id": 462,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 79,
+        "category": "extended",
+        "id": 463,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 79,
+        "category": "extended",
+        "id": 464,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 79,
+        "category": "main",
+        "id": 465,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 79,
+        "category": "extended",
+        "id": 466,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 80,
+        "category": "main",
+        "id": 467,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 80,
+        "category": "main",
+        "id": 468,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 80,
+        "category": "extended",
+        "id": 469,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 81,
+        "category": "extended",
+        "id": 470,
+        "oxidation_state": -5
+    },
+    {
+        "atomic_number": 81,
+        "category": "extended",
+        "id": 471,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 81,
+        "category": "main",
+        "id": 472,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 81,
+        "category": "extended",
+        "id": 473,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 81,
+        "category": "extended",
+        "id": 474,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 81,
+        "category": "main",
+        "id": 475,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 82,
+        "category": "main",
+        "id": 476,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 82,
+        "category": "main",
+        "id": 477,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 82,
+        "category": "extended",
+        "id": 478,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 82,
+        "category": "extended",
+        "id": 479,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 82,
+        "category": "extended",
+        "id": 480,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 82,
+        "category": "extended",
+        "id": 481,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 82,
+        "category": "extended",
+        "id": 482,
+        "oxidation_state": -4
+    },
+    {
+        "atomic_number": 82,
+        "category": "extended",
+        "id": 483,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 484,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 485,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 486,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 487,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 488,
+        "oxidation_state": -3
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 489,
+        "oxidation_state": 0
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 490,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 83,
+        "category": "main",
+        "id": 491,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 83,
+        "category": "extended",
+        "id": 492,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 84,
+        "category": "main",
+        "id": 493,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 84,
+        "category": "main",
+        "id": 494,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 84,
+        "category": "extended",
+        "id": 495,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 84,
+        "category": "main",
+        "id": 496,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 84,
+        "category": "extended",
+        "id": 497,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 85,
+        "category": "main",
+        "id": 498,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 85,
+        "category": "extended",
+        "id": 499,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 85,
+        "category": "main",
+        "id": 500,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 85,
+        "category": "extended",
+        "id": 501,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 85,
+        "category": "extended",
+        "id": 502,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 86,
+        "category": "extended",
+        "id": 503,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 86,
+        "category": "extended",
+        "id": 504,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 87,
+        "category": "main",
+        "id": 505,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 88,
+        "category": "main",
+        "id": 506,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 89,
+        "category": "main",
+        "id": 507,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 90,
+        "category": "extended",
+        "id": 508,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 90,
+        "category": "extended",
+        "id": 509,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 90,
+        "category": "extended",
+        "id": 510,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 90,
+        "category": "extended",
+        "id": 511,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 90,
+        "category": "main",
+        "id": 512,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 91,
+        "category": "extended",
+        "id": 513,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 91,
+        "category": "extended",
+        "id": 514,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 91,
+        "category": "extended",
+        "id": 515,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 91,
+        "category": "main",
+        "id": 516,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 92,
+        "category": "extended",
+        "id": 517,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 92,
+        "category": "extended",
+        "id": 518,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 92,
+        "category": "main",
+        "id": 519,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 92,
+        "category": "extended",
+        "id": 520,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 92,
+        "category": "extended",
+        "id": 521,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 92,
+        "category": "extended",
+        "id": 522,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 92,
+        "category": "extended",
+        "id": 523,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 93,
+        "category": "extended",
+        "id": 524,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 93,
+        "category": "extended",
+        "id": 525,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 93,
+        "category": "main",
+        "id": 526,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 93,
+        "category": "extended",
+        "id": 527,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 93,
+        "category": "extended",
+        "id": 528,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 93,
+        "category": "extended",
+        "id": 529,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 94,
+        "category": "extended",
+        "id": 530,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 94,
+        "category": "extended",
+        "id": 531,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 94,
+        "category": "extended",
+        "id": 532,
+        "oxidation_state": 8
+    },
+    {
+        "atomic_number": 94,
+        "category": "extended",
+        "id": 533,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 94,
+        "category": "main",
+        "id": 534,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 94,
+        "category": "extended",
+        "id": 535,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 94,
+        "category": "extended",
+        "id": 536,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 95,
+        "category": "extended",
+        "id": 537,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 95,
+        "category": "extended",
+        "id": 538,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 95,
+        "category": "main",
+        "id": 539,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 95,
+        "category": "extended",
+        "id": 540,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 95,
+        "category": "extended",
+        "id": 541,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 95,
+        "category": "extended",
+        "id": 542,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 96,
+        "category": "extended",
+        "id": 543,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 96,
+        "category": "main",
+        "id": 544,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 96,
+        "category": "extended",
+        "id": 545,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 96,
+        "category": "extended",
+        "id": 546,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 97,
+        "category": "main",
+        "id": 547,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 97,
+        "category": "extended",
+        "id": 548,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 97,
+        "category": "extended",
+        "id": 549,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 97,
+        "category": "extended",
+        "id": 550,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 98,
+        "category": "main",
+        "id": 551,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 98,
+        "category": "extended",
+        "id": 552,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 98,
+        "category": "extended",
+        "id": 553,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 98,
+        "category": "extended",
+        "id": 554,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 99,
+        "category": "main",
+        "id": 555,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 99,
+        "category": "extended",
+        "id": 556,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 99,
+        "category": "extended",
+        "id": 557,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 100,
+        "category": "extended",
+        "id": 558,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 100,
+        "category": "main",
+        "id": 559,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 101,
+        "category": "main",
+        "id": 560,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 101,
+        "category": "extended",
+        "id": 561,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 102,
+        "category": "extended",
+        "id": 562,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 102,
+        "category": "main",
+        "id": 563,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 103,
+        "category": "main",
+        "id": 564,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 104,
+        "category": "extended",
+        "id": 565,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 104,
+        "category": "main",
+        "id": 566,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 105,
+        "category": "extended",
+        "id": 567,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 105,
+        "category": "extended",
+        "id": 568,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 105,
+        "category": "extended",
+        "id": 569,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 106,
+        "category": "extended",
+        "id": 570,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 106,
+        "category": "extended",
+        "id": 571,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 106,
+        "category": "extended",
+        "id": 572,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 106,
+        "category": "extended",
+        "id": 573,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 107,
+        "category": "extended",
+        "id": 574,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 107,
+        "category": "extended",
+        "id": 575,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 107,
+        "category": "extended",
+        "id": 576,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 107,
+        "category": "extended",
+        "id": 577,
+        "oxidation_state": 7
+    },
+    {
+        "atomic_number": 108,
+        "category": "extended",
+        "id": 578,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 108,
+        "category": "extended",
+        "id": 579,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 108,
+        "category": "extended",
+        "id": 580,
+        "oxidation_state": 8
+    },
+    {
+        "atomic_number": 108,
+        "category": "extended",
+        "id": 581,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 109,
+        "category": "extended",
+        "id": 582,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 109,
+        "category": "extended",
+        "id": 583,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 109,
+        "category": "extended",
+        "id": 584,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 110,
+        "category": "extended",
+        "id": 585,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 110,
+        "category": "extended",
+        "id": 586,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 110,
+        "category": "extended",
+        "id": 587,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 111,
+        "category": "extended",
+        "id": 588,
+        "oxidation_state": 3
+    },
+    {
+        "atomic_number": 111,
+        "category": "extended",
+        "id": 589,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 111,
+        "category": "extended",
+        "id": 590,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 112,
+        "category": "extended",
+        "id": 591,
+        "oxidation_state": 2
+    },
+    {
+        "atomic_number": 112,
+        "category": "extended",
+        "id": 592,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 116,
+        "category": "extended",
+        "id": 593,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 116,
+        "category": "extended",
+        "id": 594,
+        "oxidation_state": -2
+    },
+    {
+        "atomic_number": 117,
+        "category": "extended",
+        "id": 595,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 117,
+        "category": "extended",
+        "id": 596,
+        "oxidation_state": 5
+    },
+    {
+        "atomic_number": 118,
+        "category": "extended",
+        "id": 597,
+        "oxidation_state": 4
+    },
+    {
+        "atomic_number": 118,
+        "category": "extended",
+        "id": 598,
+        "oxidation_state": 6
+    },
+    {
+        "atomic_number": 118,
+        "category": "extended",
+        "id": 599,
+        "oxidation_state": -1
+    },
+    {
+        "atomic_number": 118,
+        "category": "extended",
+        "id": 600,
+        "oxidation_state": 1
+    },
+    {
+        "atomic_number": 118,
+        "category": "extended",
+        "id": 601,
+        "oxidation_state": 2
+    }
+]
