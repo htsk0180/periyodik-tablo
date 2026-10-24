@@ -13,8 +13,48 @@
 - **Renklendirme modları** — kategori, fiziksel hâl, elektronegatiflik, erime noktası, atom yarıçapı ve keşif yılı.
 - **Quiz** — kolay/orta/zor seviyelerde 10 soruluk turlar; açıklamalı geri bildirim ve `localStorage` ile en iyi skor.
 - **Karşılaştırma** — iki elementin özelliklerini yan yana görme ve periyodik eğilim yorumları.
+- **LAB 118** — numune arşivi, güvenlik kapıları, beş analitik protokol, vaka modu, laboratuvar defteri ve rapor dışa aktarma içeren WebGL laboratuvar simülasyonu.
 - **Türkçe / English** — tüm arayüz, veri etiketleri ve içerikler iki dilde.
 - **Erişilebilirlik** — klavye kısayolları, ARIA etiketleri, odak yönetimi ve `prefers-reduced-motion` desteği.
+
+## LAB 118 — analitik laboratuvar
+
+LAB 118, periyodik tablodan bağımsız bir oyun değil; aynı element verisini kullanan bir analitik kimya tezgâhıdır. Amaç, bir numunenin kimliğini veya davranışını ölçüm, gözlem ve bağımsız kanıtlarla açıklamaktır.
+
+### İş akışı
+
+1. **Numune seç** — 118 elementin tamamı arşivden seçilebilir; rastgele numune de alınabilir.
+2. **Protokol seç** — yoğunluk, yüzey/özellik, alev ve emisyon, reaksiyon hücresi veya termal/faz analizi.
+3. **Güvenlik kontrolü** — gözlük, eldiven, önlük, çeker ocak, kurşun siper ve risk onayı protokole göre zorunludur.
+4. **Deneyi çalıştır** — ölçümler, gözlemler, dengeli denklem ve güvenilirlik etiketi üretilir.
+5. **Deftere kaydet** — her çalıştırma otomatik kaydedilir; kayıtlar tek tek silinebilir, Markdown olarak indirilebilir veya yazdırılabilir.
+
+### Vaka modu
+
+**VAKA 001 / numune A-01**, etiketsiz bir numunenin kimliğini bulma senaryosudur. Numune mineral yağ altında gelir; elementin adı, sembolü ve denklemlerdeki sembolü kimlik doğrulanana kadar maskelenir. En az iki bağımsız kanıt toplandıktan sonra aday listesinden kimlik doğrulanır. Doğru kimlikte maskeli kayıtlar açılır ve vaka deftere işlenir; yanlış adayda kanıtlara dayalı geri bildirim verilir. Vaka sırasında numune değiştirilemez.
+
+### Bilimsel dürüstlük
+
+- Her sonuç bir güvenilirlik etiketi taşır: **literatür**, **ölçüldü**, **öngörüldü**, **gösterge niteliğinde** veya **sembolik**.
+- Yoğunluk ölçümleri 1σ belirsizlik ve literatür sapmasıyla raporlanır; gazlarda ideal gaz yaklaşımı ve 100 mL hacim kullanılır.
+- Reaksiyon denklemleri dengelidir. Standart koşullarda (1 M, 25 °C, 1 atm) hesaplanan E° ve ΔG° değerleri yalnızca destekleyici kanıttır; gerçek hız ve ürün dağılımı koşullara bağlıdır.
+- Eşik sıcaklığın altında denklem uygulanmaz; reaksiyon gözlenmiyorsa denklem bloğu gösterilmez.
+- Veriler eğitim simülasyonu içindir; gerçek laboratuvar prosedürleri için güncel SDS ve kurumsal güvenlik protokollerini kullanın.
+
+### Laboratuvar verileri
+
+Profil, güvenlik seçimleri, defter ve vaka durumu tarayıcıda saklanır:
+
+- `pt.lab.profile`
+- `pt.lab.safety`
+- `pt.lab.notebook`
+- `pt.lab.mission`
+
+Defter ve raporlar istemci tarafında üretilir; hiçbir veri sunucuya gönderilmez. Tarayıcı verilerini temizlemek bu kayıtları da siler.
+
+### WebGL yedeği
+
+3B tezgâh WebGL gerektirir. WebGL yoksa veya bağlam kaybolursa panel tabanlı deney motoru çalışmaya devam eder; ölçümler, güvenlik kapıları, defter ve rapor işlevleri kullanılabilir. Bağlam geri geldiğinde 3B sahne otomatik olarak yeniden başlar.
 
 ## Çalıştırma
 
@@ -37,6 +77,7 @@ Ardından <http://localhost:8000/> adresini açın.
 | `Esc` | Arama sonuçlarını, elementi veya eğilimler penceresini kapat |
 | `←` / `→` | Element penceresi açıkken önceki/sonraki element |
 | `1` – `4` | Quiz sırasında seçenek işaretle |
+| `Ctrl/Cmd + Enter` | Laboratuvarda deneyi çalıştır |
 
 ## Proje yapısı
 
@@ -48,6 +89,10 @@ js/reactions.js            Tepkimeler, bileşikler, kullanımlar, GHS/H ifadeler
 js/atom3d.js               Three.js atom/orbital sahneleri ve orbital matematiği
 js/app.01.js … app.06.js   Uygulama denetleyicisi (modüler parçalar)
 js/app.js                  Parçalardan üretilen nihai çalışma dosyası
+css/lab.css                LAB 118 HUD, tezgâh ve responsive stiller
+js/lab.data.js             Alev/tayf, reaktif, reaksiyon ve vaka verileri
+js/lab.01.js … lab.06.js   LAB 118 çalışma zamanı (modüler parçalar)
+js/lab.js                  Parçalardan üretilen nihai laboratuvar dosyası
 assets/data/elements.js    Gömülü element verisi (window.PERIODIC_DATA)
 assets/data/elements.json  Aynı verinin JSON yedeği
 assets/vendor/             three.min.js ve OrbitControls.js
@@ -64,6 +109,14 @@ cat js/app.01.js js/app.02.js js/app.03.js js/app.04.js js/app.05.js js/app.06.j
 ```
 
 Doğrudan `js/app.js` üzerinde çalışacaksanız bu adımı atlayabilirsiniz; ancak parçalarla olan tutarlılığı korumak için üretimi tekrarlamak en iyisidir.
+
+LAB 118 çalışma zamanı da benzer şekilde üretilir:
+
+```bash
+cat js/lab.01.js js/lab.02.js js/lab.03.js js/lab.04.js js/lab.05.js js/lab.06.js > js/lab.js
+```
+
+Yalnızca `js/lab.js` ve `js/lab.data.js` çalışma zamanında yüklenir; `lab.0*.js` parçaları dağıtıma dahil edilmez.
 
 ## Veri kaynakları ve lisanslar
 
@@ -126,7 +179,7 @@ Framework algılanmazsa statik site olarak yayınlanır. Build command ve output
 
 - `index.html` kök dizinde olduğu için ek yapılandırma gerekmez.
 - Tüm fontlar, Three.js ve element verileri yereldir; CDN bağımlılığı yoktur.
-- `.vercelignore` yalnızca geliştirme/test ham verilerini dışarıda bırakır; çalışma zamanı dosyalarına dokunmaz.
+- `.vercelignore` geliştirme/test dosyalarını, ham verileri ve modüler JS parçalarını dışarıda bırakır; çalışma zamanında yüklenen `js/app.js`, `js/lab.js` ve diğer varlıklara dokunmaz.
 - Element fotoğrafları Wikimedia Commons'tan yüklenir; bu görseller için internet bağlantısı gerekir, ancak bağlantı yoksa yer tutucu gösterilir.
 - WebGL, HTTPS üzerinden sorunsuz çalışır; WebGL desteklemeyen tarayıcılarda atom sekmesi otomatik olarak Bohr modeli/elektron dizilimi görünümüne döner.
 

@@ -407,6 +407,7 @@
     if (lang !== "tr" && lang !== "en") return;
     state.lang = lang;
     applyChrome();
+    relocalizeNotebook();
     renderAll();
     if (state.lastRun) {
       state.lastResult = computeResult(state.lastRun.z, state.lastRun.protocol, state.lastRun.inputs, { silent: true });

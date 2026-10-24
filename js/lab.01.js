@@ -156,9 +156,18 @@
   }
   function fmt(n, digits) {
     if (n == null || Number.isNaN(Number(n))) return "—";
-    if (window.fmtNum) return window.fmtNum(Number(n), digits == null ? 3 : digits);
     const v = Number(n);
-    return v.toLocaleString(state.lang === "tr" ? "tr-TR" : "en-US", { maximumFractionDigits: digits == null ? 3 : digits });
+    const d = digits == null ? 3 : Math.max(0, Math.min(20, digits));
+    if (v !== 0 && (Math.abs(v) < 0.001 || Math.abs(v) >= 1e7)) {
+      return v.toExponential(Math.max(1, Math.min(3, d))).replace("e+", "×10^").replace("e-", "×10^−");
+    }
+    return v.toLocaleString(state.lang === "tr" ? "tr-TR" : "en-US", { maximumFractionDigits: d });
+  }
+  function fmtFixed(n, digits) {
+    if (n == null || Number.isNaN(Number(n))) return "—";
+    return Number(n).toLocaleString(state.lang === "tr" ? "tr-TR" : "en-US", {
+      minimumFractionDigits: digits, maximumFractionDigits: digits
+    });
   }
   function clamp(n, min, max) { return Math.min(max, Math.max(min, n)); }
   function K2C(k) { return k == null ? null : k - 273.15; }
@@ -288,7 +297,8 @@
     renderNotebookCount();
   }
   function researcherName() {
-    return state.profile.name || L("Dr. Araştırmacı", "Dr. Researcher");
+    if (state.profile && state.profile.guest) return L("Misafir Araştırmacı", "Guest Researcher");
+    return (state.profile && state.profile.name) || L("Dr. Araştırmacı", "Dr. Researcher");
   }
   function labName() {
     return state.profile.lab || L("Analitik Kimya Laboratuvarı", "Analytical Chemistry Laboratory");

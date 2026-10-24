@@ -183,6 +183,7 @@
       title: result.title,
       observation: result.observation,
       equation: result.equation || "",
+      inputs: result.inputs || null,
       confidence: result.confidence,
       measurements: (result.measurements || []).map((m) => ({ label: m.label, value: m.value })),
       notes: result.notes || [],
@@ -210,15 +211,51 @@
 
   function revealMissionRecords() {
     let changed = false;
+    const el = elementByZ(MISSION.targetZ);
     state.notebook.forEach((record) => {
-      if (record.mission === "A01" && record.masked) {
-        const el = elementByZ(MISSION.targetZ);
-        record.masked = false;
-        record.z = MISSION.targetZ;
-        record.symbol = el ? el.symbol : "?";
-        record.name = el ? loc(el.name) : "A-01";
-        changed = true;
+      if (record.mission !== "A01" || !record.masked) return;
+      record.masked = false;
+      record.z = MISSION.targetZ;
+      record.symbol = el ? el.symbol : "?";
+      record.name = el ? loc(el.name) : "A-01";
+      if (record.inputs) {
+        const fresh = computeResult(MISSION.targetZ, record.protocol, record.inputs, { reveal: true });
+        if (fresh) {
+          record.title = fresh.title;
+          record.observation = fresh.observation;
+          record.equation = fresh.equation || "";
+          record.confidence = fresh.confidence;
+          record.measurements = (fresh.measurements || []).map((m) => ({ label: m.label, value: m.value }));
+          record.notes = fresh.notes || [];
+        }
+      } else if (el) {
+        record.title = String(record.title || "").replace(/A-01/g, el.symbol);
       }
+      changed = true;
+    });
+    if (changed) saveNotebook();
+  }
+
+  function relocalizeNotebook() {
+    let changed = false;
+    state.notebook.forEach((record) => {
+      if (!record.protocol || !record.inputs) return;
+      const z = record.z != null ? record.z : (record.mission === "A01" ? MISSION.targetZ : null);
+      if (z == null) return;
+      const fresh = computeResult(z, record.protocol, record.inputs, { reveal: !record.masked });
+      if (!fresh) return;
+      if (!record.masked) {
+        const el = elementByZ(z);
+        if (el) { record.symbol = el.symbol; record.name = loc(el.name); }
+      }
+      record.protocolName = L(protocolMeta(record.protocol).name[0], protocolMeta(record.protocol).name[1]);
+      record.title = fresh.title;
+      record.observation = fresh.observation;
+      record.equation = fresh.equation || "";
+      record.confidence = fresh.confidence;
+      record.measurements = (fresh.measurements || []).map((m) => ({ label: m.label, value: m.value }));
+      record.notes = fresh.notes || [];
+      changed = true;
     });
     if (changed) saveNotebook();
   }
@@ -299,11 +336,10 @@
         '<div class="lab-mission-box"><h4>' + esc(L("Hedef", "Objective")) + "</h4><p>" + esc(loc(MISSION.objective)) + "</p></div>" +
         '<div class="lab-mission-box"><h4>' + esc(L("Depolama", "Storage")) + "</h4><p>" + esc(loc(MISSION.storage)) + "</p></div>" +
       "</div>" +
-      '<div class="lab-mission-box"><h4>' + esc(L("Adaylar", "Candidates")) + '</h4><div class="lab-candidates">' + candidateButtons + "</div></div>" +
       '<div class="lab-mission-box"><h4>' + esc(L("Kanıtlar", "Evidence")) + " · " + done + "/" + EVIDENCE.length + '</h4><div class="lab-evidence-list">' +
         EVIDENCE.map((e) => missionEvidenceRow(e)).join("") + "</div></div>" +
       (hints ? '<div class="lab-mission-hints">' + hints + "</div>" : "") +
-      '<div class="lab-mission-form"><h4>' + esc(L("Kimlik doğrulama", "Identity verification")) + "</h4>" +
+      '<div class="lab-mission-form"><h4>' + esc(L("Adaylar ve kimlik doğrulama", "Candidates and identity verification")) + "</h4>" +
         "<p>" + esc(L("Adaylardan birini seç. En az " + MIN_EVIDENCE + " bağımsız kanıt gerekir.",
           "Select one of the candidates. At least " + MIN_EVIDENCE + " independent lines of evidence are required.")) + "</p>" +
         '<div class="lab-candidates">' + candidateButtons + "</div>" +

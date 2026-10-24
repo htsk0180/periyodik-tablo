@@ -847,6 +847,7 @@ function renderElementHeader() {
         '<div class="em-chips">' + chips.join("") + "</div>" +
       "</div>" +
       '<div class="em-actions">' +
+        '<button class="btn btn-ghost btn-lab" type="button" data-action="lab" title="' + escapeText(t("labSend")) + '"><svg class="icon"><use href="#i-flask"/></svg><span>LAB</span></button>' +
         '<button class="btn btn-ghost btn-compare" type="button" data-action="compare">' + escapeText(t("compareThis")) + "</button>" +
         '<button class="icon-btn btn-copy" type="button" data-action="copy" aria-label="' + escapeText(t("copyLink")) + '" title="' + escapeText(t("copyLink")) + '"><svg class="icon"><use href="#i-copy"/></svg></button>' +
         '<button class="icon-btn" type="button" data-action="prev" aria-label="' + escapeText(t("previous")) + '" title="' + escapeText(t("previous")) + '"><svg class="icon"><use href="#i-left"/></svg></button>' +
@@ -2148,7 +2149,7 @@ function toast(message) {
 }
 
 function setView(name, scroll) {
-  if (!["explore", "quiz", "compare"].includes(name)) return;
+  if (!["explore", "quiz", "compare", "lab"].includes(name)) return;
   state.view = name;
   $$(".view").forEach((view) => view.classList.toggle("hidden", view.id !== name + "-view"));
   $$("[data-view]").forEach((button) => {
@@ -2156,6 +2157,11 @@ function setView(name, scroll) {
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-current", active ? "page" : "false");
   });
+  if (name === "lab") {
+    if (window.Lab118) window.Lab118.enter();
+  } else if (window.Lab118) {
+    window.Lab118.leave();
+  }
   if (name === "quiz") renderQuiz();
   if (name === "compare") {
     syncComparePickers();
@@ -2166,6 +2172,12 @@ function setView(name, scroll) {
   }
   if (scroll !== false) {
     try { window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); } catch (e) { window.scrollTo(0, 0); }
+  }
+  const targetHash = name === "explore" ? "" : "#" + name;
+  if (location.hash !== targetHash) {
+    try {
+      history.replaceState(null, "", targetHash || location.pathname + location.search);
+    } catch (e) {}
   }
 }
 
@@ -2251,6 +2263,7 @@ function changeLanguage(lang) {
     destroyAtomViewer();
     renderElementModal();
   }
+  if (window.Lab118) window.Lab118.setLang(state.lang);
 }
 
 function showLoadError() {
@@ -2342,6 +2355,8 @@ function bindEvents() {
   });
   const heroQuiz = $id("hero-quiz");
   if (heroQuiz) heroQuiz.addEventListener("click", () => setView("quiz"));
+  const heroLab = $id("hero-lab");
+  if (heroLab) heroLab.addEventListener("click", () => setView("lab"));
 
   $$("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => changeLanguage(button.dataset.lang));
@@ -2481,6 +2496,7 @@ function bindEvents() {
         else if (name === "next") navigateElement(1);
         else if (name === "copy") copyElementLink();
         else if (name === "compare") compareElement(state.currentZ);
+        else if (name === "lab") sendElementToLab(state.currentZ);
         return;
       }
       const tab = event.target.closest("[data-tab]");
@@ -2663,6 +2679,19 @@ function handleHash() {
   }
   if (hash === "#quiz") setView("quiz", false);
   else if (hash === "#compare") setView("compare", false);
+  else if (hash === "#lab") setView("lab", false);
+  else setView("explore", false);
+}
+
+function sendElementToLab(z) {
+  if (!z) return;
+  closeElement();
+  if (window.Lab118) {
+    window.Lab118.sendElement(Number(z));
+    setView("lab");
+  } else {
+    toast(t("loadError"));
+  }
 }
 
 function boot() {

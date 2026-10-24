@@ -106,7 +106,12 @@
           "Isıtıldığında oksit oluşur; renk ve duman elemente bağlıdır.", "An oxide forms on heating; colour and fumes depend on the element.",
           ["heat", "smoke"], "indicative", false);
       }
-      return generic("4" + sym + " + " + (n === 2 ? "3O₂ → 2" + sym + "₂O₃" : "O₂ → 2" + sym + "₂O"),
+      const oxideEq = n === 1
+        ? "4" + sym + " + O₂ → 2" + sym + "₂O"
+        : n === 2
+          ? "2" + sym + " + O₂ → 2" + sym + "O"
+          : "4" + sym + " + " + n + "O₂ → 2" + sym + "₂O" + sub(n);
+      return generic(oxideEq,
         "Isıtıldığında yüzeyde oksit tabakası oluşur.", "An oxide layer forms on the surface when heated.",
         ["heat", "passivation"], "indicative", false);
     }
@@ -190,8 +195,8 @@
       pycnometer: L("Piknometre", "Pycnometer"),
       syringe: L("Gaz şırıngası (100 mL)", "Gas syringe (100 mL)")
     }[method] || method;
-    const massText = gas ? fmt(mass * 1000, 2) + " mg" : fmt(mass, 3) + " g";
-    const volText = gas ? fmt(measuredVol, 1) + " mL" : fmt(measuredVol, 2) + " cm³";
+    const massText = gas ? fmtFixed(mass * 1000, 2) + " mg" : fmtFixed(mass, 3) + " g";
+    const volText = gas ? fmtFixed(measuredVol, 1) + " mL" : fmtFixed(measuredVol, 2) + " cm³";
     const blind = isBlind();
     const observations = blind
       ? L("Ölçülen yoğunluk " + fmtDensity(measuredD) + " ± " + fmtDensity(unc) + ". Literatür karşılaştırması kimlik çözülene kadar gizli.",
@@ -324,6 +329,7 @@
     const above = tempC > maxTemp;
     const phenomena = reaction.phenomena || [];
     const occurs = !below && phenomena.some((p) => p !== "none");
+    const noReaction = !below && !occurs;
     const blind = isBlind();
     const equation = blind ? maskSymbol(reaction.equation, el) : reaction.equation;
     let observation = loc(reaction.observation);
@@ -354,10 +360,10 @@
       subtitle: L("Protokol: reaksiyon", "Protocol: reaction") + " · " + formatDate(Date.now()),
       confidence: below ? "predicted" : reaction.confidence || "literature",
       observation: observation,
-      equation: below ? "—" : equation,
+      equation: below ? "—" : noReaction ? "" : equation,
       equationNote: below
         ? L("Eşik sıcaklığın altında denklem uygulanmaz.", "The equation does not apply below the threshold temperature.")
-        : L("Dengeli ana denklem", "Balanced main equation"),
+        : noReaction ? "" : L("Dengeli ana denklem", "Balanced main equation"),
       measurements: measurements,
       thermo: thermo,
       notes: notes,
@@ -403,11 +409,21 @@
     }
     const target = clamp(Number(targetC), start, max);
     let current = points[0];
-    let best = Infinity;
-    points.forEach((p) => {
-      const d = Math.abs(p.y - target);
-      if (d < best) { best = d; current = p; }
-    });
+    for (let i = 0; i < points.length - 1; i += 1) {
+      const a = points[i];
+      const b = points[i + 1];
+      const lo = Math.min(a.y, b.y);
+      const hi = Math.max(a.y, b.y);
+      if (target >= lo && target <= hi) {
+        if (a.y === b.y) { current = a; }
+        else {
+          const t = (target - a.y) / (b.y - a.y);
+          current = { x: a.x + (b.x - a.x) * t, y: target };
+        }
+        break;
+      }
+      current = b;
+    }
     return { points: points, markers: markers, current: current, min: start, max: max };
   }
 
@@ -478,6 +494,7 @@
     result.symbol = blind ? "?" : el.symbol;
     result.name = blind ? "A-01" : loc(el.name);
     result.protocol = protocol;
+    result.inputs = JSON.parse(JSON.stringify(inputs || {}));
     result.masked = blind;
     result.identityRevealed = !blind && state.missionSolved && el.z === MISSION.targetZ;
     if (blind) {
@@ -642,6 +659,7 @@
             rec.confidence = fresh.confidence;
             rec.measurements = (fresh.measurements || []).map((m) => ({ label: m.label, value: m.value }));
             fresh.recordId = rec.id;
+            saveNotebook();
           }
         }
         state.lastResult = fresh;

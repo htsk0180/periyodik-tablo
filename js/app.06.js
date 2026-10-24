@@ -38,6 +38,12 @@ function setView(name, scroll) {
   if (scroll !== false) {
     try { window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); } catch (e) { window.scrollTo(0, 0); }
   }
+  const targetHash = name === "explore" ? "" : "#" + name;
+  if (location.hash !== targetHash) {
+    try {
+      history.replaceState(null, "", targetHash || location.pathname + location.search);
+    } catch (e) {}
+  }
 }
 
 function updateLangButtons() {
@@ -539,6 +545,7 @@ function handleHash() {
   if (hash === "#quiz") setView("quiz", false);
   else if (hash === "#compare") setView("compare", false);
   else if (hash === "#lab") setView("lab", false);
+  else setView("explore", false);
 }
 
 function sendElementToLab(z) {

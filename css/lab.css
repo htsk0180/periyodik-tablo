@@ -1346,6 +1346,7 @@ body.lab-mode .site-footer { display: none; }
 }
 @media (max-width: 1040px) {
   .lab-shell {
+    display: flow-root;
     height: auto;
     min-height: calc(100svh - var(--header-h));
     overflow: visible;
@@ -1386,6 +1387,19 @@ body.lab-mode .site-footer { display: none; }
   .lab-mission-card,
   .lab-results,
   .lab-safety { backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  #lab-fallback {
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 46vh;
+    min-height: 310px;
+    max-height: 460px;
+    padding: 60px 18px 18px;
+  }
+  .lab-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 120;
+  }
   .lab-station-dock {
     position: fixed;
     left: 12px;
@@ -1439,7 +1453,7 @@ body.lab-mode .site-footer { display: none; }
   .lab-measure-grid { grid-template-columns: 1fr 1fr; }
   .lab-mission-grid { grid-template-columns: 1fr; }
   .lab-station-dock { left: 8px; right: 8px; bottom: 8px; padding: 4px; }
-  .lab-station { height: 44px; font-size: 6.5px; padding-inline: 2px; gap: 2px; }
+  .lab-station { height: 44px; font-size: 7.5px; padding-inline: 2px; gap: 2px; }
   .lab-station .icon { width: 15px; height: 15px; }
   .lab-station-notebook { margin-left: 0; }
   .lab-status { bottom: 74px; left: 10px; right: 10px; }
@@ -1475,6 +1489,18 @@ body.lab-mode .site-footer { display: none; }
   .lab-hazard-list { gap: 3px; }
   .lab-solved-identity b { font-size: 26px; }
 }
+@media (max-width: 640px) and (max-height: 720px) {
+  #lab-canvas,
+  .lab-vignette,
+  #lab-fallback {
+    height: 250px;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .lab-left { margin-top: 256px; }
+  .lab-status { display: none; }
+}
+
 @media (max-width: 380px) {
   .lab-identity h1 { max-width: 118px; font-size: 11.5px; }
   .lab-station span { font-size: 6px; }
