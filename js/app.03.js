@@ -69,6 +69,7 @@ function renderElementHeader() {
         '<div class="em-chips">' + chips.join("") + "</div>" +
       "</div>" +
       '<div class="em-actions">' +
+        '<button class="btn btn-ghost btn-lab" type="button" data-action="lab" title="' + escapeText(t("labSend")) + '"><svg class="icon"><use href="#i-flask"/></svg><span>LAB</span></button>' +
         '<button class="btn btn-ghost btn-compare" type="button" data-action="compare">' + escapeText(t("compareThis")) + "</button>" +
         '<button class="icon-btn btn-copy" type="button" data-action="copy" aria-label="' + escapeText(t("copyLink")) + '" title="' + escapeText(t("copyLink")) + '"><svg class="icon"><use href="#i-copy"/></svg></button>' +
         '<button class="icon-btn" type="button" data-action="prev" aria-label="' + escapeText(t("previous")) + '" title="' + escapeText(t("previous")) + '"><svg class="icon"><use href="#i-left"/></svg></button>' +

@@ -14,7 +14,7 @@ function toast(message) {
 }
 
 function setView(name, scroll) {
-  if (!["explore", "quiz", "compare"].includes(name)) return;
+  if (!["explore", "quiz", "compare", "lab"].includes(name)) return;
   state.view = name;
   $$(".view").forEach((view) => view.classList.toggle("hidden", view.id !== name + "-view"));
   $$("[data-view]").forEach((button) => {
@@ -22,6 +22,11 @@ function setView(name, scroll) {
     button.classList.toggle("is-active", active);
     button.setAttribute("aria-current", active ? "page" : "false");
   });
+  if (name === "lab") {
+    if (window.Lab118) window.Lab118.enter();
+  } else if (window.Lab118) {
+    window.Lab118.leave();
+  }
   if (name === "quiz") renderQuiz();
   if (name === "compare") {
     syncComparePickers();
@@ -117,6 +122,7 @@ function changeLanguage(lang) {
     destroyAtomViewer();
     renderElementModal();
   }
+  if (window.Lab118) window.Lab118.setLang(state.lang);
 }
 
 function showLoadError() {
@@ -208,6 +214,8 @@ function bindEvents() {
   });
   const heroQuiz = $id("hero-quiz");
   if (heroQuiz) heroQuiz.addEventListener("click", () => setView("quiz"));
+  const heroLab = $id("hero-lab");
+  if (heroLab) heroLab.addEventListener("click", () => setView("lab"));
 
   $$("[data-lang]").forEach((button) => {
     button.addEventListener("click", () => changeLanguage(button.dataset.lang));
@@ -347,6 +355,7 @@ function bindEvents() {
         else if (name === "next") navigateElement(1);
         else if (name === "copy") copyElementLink();
         else if (name === "compare") compareElement(state.currentZ);
+        else if (name === "lab") sendElementToLab(state.currentZ);
         return;
       }
       const tab = event.target.closest("[data-tab]");
@@ -529,6 +538,18 @@ function handleHash() {
   }
   if (hash === "#quiz") setView("quiz", false);
   else if (hash === "#compare") setView("compare", false);
+  else if (hash === "#lab") setView("lab", false);
+}
+
+function sendElementToLab(z) {
+  if (!z) return;
+  closeElement();
+  if (window.Lab118) {
+    window.Lab118.sendElement(Number(z));
+    setView("lab");
+  } else {
+    toast(t("loadError"));
+  }
 }
 
 function boot() {
